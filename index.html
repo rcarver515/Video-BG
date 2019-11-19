@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <title>Video Backgrounds</title>
 </head>
 <body>
-    
+    <video autoplay muted loop id="myVideo">
+        <source src="./resources/img/flame.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <div class="content">
+        <h1>OOOHH AAAAHHHH</h1>
+        <p>Sooo I think I just created My 1st!!! video background!</p>
+        <p>AND w/ a text overlay!!!</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+      
+      <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
+      
 </body>
 </html>
