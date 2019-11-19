@@ -11,7 +11,7 @@
   
   /* Position the navbar container inside the image */
 .container {
-    position: fixed;
+    position: relative;
     margin: 20px;
     width: auto;
   }
@@ -19,13 +19,13 @@
   /* The navbar */
   .topnav {
     overflow: auto;
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
   }
   
   /* Navbar links */
   .topnav a {
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -54,6 +54,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
+    text-align: center;
     width: 100%;
     padding: 20px;
   }
